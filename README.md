@@ -1,6 +1,6 @@
 SimplePageTurnerForPPT
 ==
-![preview](./preview/1.png)
+![preview](https://fastly.jsdelivr.net/gh/Kibidango086/picx-images-hosting@master/20240718/1.6t70dvgoze.png)
 适用于立式触控设备的极简PPT翻页工具
 
 开发时只考虑了较新的Office
