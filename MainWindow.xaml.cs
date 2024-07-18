@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows;
+using System.Windows.Input;
 using System.Windows.Threading;
 
 namespace PPTControl
@@ -25,9 +26,9 @@ namespace PPTControl
             timer.Tick += Timer_Tick;
             timer.Start();
         }
-        void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void MoveButton_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            DragMove();
+            this.DragMove();
         }
         private void Timer_Tick(object? sender, EventArgs e)
         {

@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="prev.svg" />
     <None Remove="res\clos.png" />
+    <None Remove="res\drag.png" />
     <None Remove="res\menu.png" />
     <None Remove="res\next.png" />
     <None Remove="res\prev.png" />
@@ -30,6 +31,7 @@
 
   <ItemGroup>
     <Resource Include="res\clos.png" />
+    <Resource Include="res\drag.png" />
     <Resource Include="res\menu.png" />
     <Resource Include="res\next.png" />
     <Resource Include="res\prev.png" />
