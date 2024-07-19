@@ -1,40 +1,34 @@
 ﻿<Window x:Class="PPTControl.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="SimplePageTurnerForPPT" Height="80" Width="240"
+        Title="SimplePageTurnerForPPT" Height="78" Width="200"
         WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent"
         Topmost="True"
         WindowStartupLocation="Manual">
     <Grid Background="Transparent" >
         <Border CornerRadius="12" Background="#99FFFFFF" BorderBrush="#BFBFBF" BorderThickness="1" Padding="12">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button x:Name="DragButton" Width="40" Height="55" Background="Transparent" Style="{StaticResource ButtonStyle}"  PreviewMouseLeftButtonDown="MoveButton_PreviewMouseLeftButtonDown">
+                <Button x:Name="DragButton" Width="40" Height="50" Background="Transparent" Style="{StaticResource ButtonStyle}"  PreviewMouseLeftButtonDown="MoveButton_PreviewMouseLeftButtonDown">
                     <StackPanel HorizontalAlignment="Center">
-                        <Image Height="32" Width="32" Source="/res/drag.png" OpacityMask="#66FFFFFF"/>
+                        <Image Height="28" Width="28" Source="/res/drag.png" OpacityMask="#66FFFFFF"/>
                         <TextBlock Text="拖动" Foreground="#99000000" FontWeight="Bold" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="PrevButton" Width="40" Height="55" Background="Transparent" Style="{StaticResource ButtonStyle}" Click="PrevButton_Click">
+                <Button x:Name="PrevButton" Width="40" Height="50" Background="Transparent" Style="{StaticResource ButtonStyle}" Click="PrevButton_Click">
                     <StackPanel HorizontalAlignment="Center">
-                        <Image Height="32" Width="32" Source="/res/prev.png" OpacityMask="#66FFFFFF"/>
+                        <Image Height="28" Width="28" Source="/res/prev.png" OpacityMask="#66FFFFFF"/>
                         <TextBlock Text="向前" Foreground="#99000000" FontWeight="Bold" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="NextButton" Width="40" Height="55" Background="Transparent" Style="{StaticResource ButtonStyle}" Click="NextButton_Click">
+                <Button x:Name="NextButton" Width="40" Height="50" Background="Transparent" Style="{StaticResource ButtonStyle}" Click="NextButton_Click">
                     <StackPanel HorizontalAlignment="Center">
-                        <Image Height="32" Width="32" Source="/res/next.png" OpacityMask="#66FFFFFF"/>
+                        <Image Height="28" Width="28" Source="/res/next.png" OpacityMask="#66FFFFFF"/>
                         <TextBlock Text="向后" Foreground="#99000000" FontWeight="Bold" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="MenuButton" Width="40" Height="55" Background="Transparent" Style="{StaticResource ButtonStyle}" Click="MenuButton_Click">
+                <Button x:Name="ExitButton" Width="40" Height="50" Background="Transparent" Style="{StaticResource ButtonStyle}" Click="ExitButton_Click">
                     <StackPanel HorizontalAlignment="Center">
-                        <Image Height="32" Width="32" Source="/res/menu.png" OpacityMask="#66FFFFFF"/>
-                        <TextBlock Text="右键" Foreground="#99000000" FontWeight="Bold" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0"/>
-                    </StackPanel>
-                </Button>
-                <Button x:Name="ExitButton" Width="40" Height="55" Background="Transparent" Style="{StaticResource ButtonStyle}" Click="ExitButton_Click">
-                    <StackPanel HorizontalAlignment="Center">
-                        <Image Height="32" Width="32" Source="/res/clos.png" OpacityMask="#66FFFFFF"/>
+                        <Image Height="28" Width="28" Source="/res/clos.png" OpacityMask="#66FFFFFF"/>
                         <TextBlock Text="结束" Foreground="#99000000" FontWeight="Bold" FontSize="12" HorizontalAlignment="Center" Margin="0,5,0,0"/>
                     </StackPanel>
                 </Button>

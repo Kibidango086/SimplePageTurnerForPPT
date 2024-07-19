@@ -41,8 +41,8 @@ namespace PPTControl
             double windowWidth = this.Width;
             double windowHeight = this.Height;
 
-            double leftPosition = (screenWidth - windowWidth) / 2;
-            double topPosition = 0.98*screenHeight - windowHeight;
+            double leftPosition = screenWidth - windowWidth -10;
+            double topPosition = screenHeight - windowHeight -10;
 
             this.Left = leftPosition;
             this.Top = topPosition;
@@ -155,11 +155,6 @@ namespace PPTControl
             SimulateKeyPress(VK_ESC);
         }
 
-        private void MenuButton_Click(object sender, RoutedEventArgs e)
-        {
-            SimulateKeyPress(VK_MENU);
-        }
-
         private void SimulateKeyPress(byte keyCode)
         {
             if (_pptProcess != null)
@@ -193,7 +188,6 @@ namespace PPTControl
         private const byte VK_LEFT = 0x25;
         private const byte VK_RIGHT = 0x27;
         private const byte VK_ESC = 0x1B;
-        private const byte VK_MENU = 0x5D;
 
         private static List<IntPtr> EnumerateProcessWindowHandles(int processId)
         {
